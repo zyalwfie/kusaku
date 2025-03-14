@@ -1,0 +1,22 @@
+{
+  "name": "kusaku-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"browser-sync start --server dist --files dist --port 3000\" \"npx tailwindcss -i src/input.css -o dist/assets/css/main.css --watch\"",
+    "build": "npx tailwind -i src/input.css -o dist/assets/css/main.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@egoist/tailwindcss-icons": "^1.8.2",
+    "@iconify-json/material-symbols": "^1.2.12",
+    "browser-sync": "^3.0.3",
+    "concurrently": "^9.1.0",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.9",
+    "tailwindcss": "^3.4.17"
+  }
+}
