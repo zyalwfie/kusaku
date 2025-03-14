@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../../assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Red+Rose:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Account | Withdraw</title>
+  </head>
+  <body>
+    <div class="container max-w-[768px]">
+      <!-- App Bar -->
+      <div
+        class="fixed left-0 right-0 top-0 z-10 flex items-center gap-5 bg-white p-4 text-gray-900"
+      >
+        <a
+          href="#"
+          class="hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400"
+          onclick="history.back()"
+        >
+          <span
+            class="i-material-symbols-arrow-left-alt-rounded block text-icon-md"
+          ></span>
+        </a>
+        <p class="text-lg font-semibold">Pengaturan Akun</p>
+      </div>
+      <!-- ./ App Bar -->
+
+      <div class="flex min-h-dvh flex-col gap-4 bg-green-50 pb-[80px]">
+        <div class="mt-[92px] flex w-full flex-col gap-8 p-6">
+          <!-- Card Information -->
+          <form
+            action="#"
+            method="post"
+            class="flex flex-col gap-6 rounded-[20px] bg-white p-2.5 shadow-md"
+          >
+            <div class="px-4 text-xl font-semibold text-gray-900">
+              Informasi Personal
+            </div>
+            <a
+              href="#"
+              class="flex items-center justify-center gap-2 hover:opacity-70 focus:outline-none focus:ring-2 focus:ring-green-400"
+            >
+              <img
+                src="https://avatar.iran.liara.run/public/boy"
+                alt="Boy Avatar"
+                class="size-20"
+              />
+            </a>
+            <div class="flex flex-col gap-2">
+              <div>
+                <label
+                  for="my-input-text"
+                  class="px-4 text-sm font-medium capitalize text-gray-900 empty:hidden"
+                  >Nama</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    id="my-input-text"
+                    class="peer w-full rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                    placeholder="Masukkan nama"
+                  />
+                  <div
+                    class="absolute inset-y-0 start-0 flex items-center ps-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  >
+                    <span class="i-material-symbols-person-rounded"></span>
+                  </div>
+                  <div
+                    class="absolute inset-y-0 end-0 flex items-center pr-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <label
+                  for="my-input-text"
+                  class="px-4 text-sm font-medium capitalize text-gray-900 empty:hidden"
+                  >Email</label
+                >
+                <div class="relative">
+                  <input
+                    type="email"
+                    id="my-input-text"
+                    class="peer w-full rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                    placeholder="Masukkan email"
+                  />
+                  <div
+                    class="absolute inset-y-0 start-0 flex items-center ps-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  >
+                    <span class="i-material-symbols-mail-rounded"></span>
+                  </div>
+                  <div
+                    class="absolute inset-y-0 end-0 flex items-center pr-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-brands-light-green bg-transparent p-2 text-xs font-semibold text-brands-light-green hover:bg-brands-light-green hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-400 disabled:bg-transparent disabled:text-gray-400"
+              type="button"
+            >
+              <span class="i-material-symbols-save-rounded text-icon-sm"></span>
+              <span class="capitalize">Simpan Perubahan</span>
+            </button>
+          </form>
+          <!-- / Card Information -->
+
+          <!-- PIN Security -->
+          <form
+            action="#"
+            method="post"
+            class="flex flex-col gap-6 rounded-[20px] bg-white p-2.5 shadow-md"
+          >
+            <div class="px-4 text-xl font-semibold text-gray-900">
+              Keamanan PIN
+            </div>
+            <div class="flex flex-col gap-2">
+              <div>
+                <label
+                  for="my-input-pin"
+                  class="px-4 text-sm font-medium capitalize text-gray-900 empty:hidden"
+                  >PIN Lama</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    id="my-input-pin"
+                    class="peer w-full rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                    placeholder="Masukkan 6 digit PIN lama"
+                  />
+                  <div
+                    class="absolute inset-y-0 start-0 flex items-center ps-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  >
+                    <span class="i-material-symbols-shield-locked-rounded"></span>
+                  </div>
+                  <div
+                    class="absolute inset-y-0 end-0 flex items-center pr-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <label
+                  for="my-input-new-pin"
+                  class="px-4 text-sm font-medium capitalize text-gray-900 empty:hidden"
+                  >PIN Baru</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    id="my-input-new-pin"
+                    class="peer w-full rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                    placeholder="Buat 6 digit PIN baru"
+                  />
+                  <div
+                    class="absolute inset-y-0 start-0 flex items-center ps-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  >
+                    <span class="i-material-symbols-shield-locked-rounded"></span>
+                  </div>
+                  <div
+                    class="absolute inset-y-0 end-0 flex items-center pr-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <label
+                  for="my-input-confirm"
+                  class="px-4 text-sm font-medium capitalize text-gray-900 empty:hidden"
+                  >Konfirmasi PIN</label
+                >
+                <div class="relative">
+                  <input
+                    type="text"
+                    id="my-input-confirm"
+                    class="peer w-full rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                    placeholder="Konfirmasi 6 digit PIN baru"
+                  />
+                  <div
+                    class="absolute inset-y-0 start-0 flex items-center ps-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  >
+                    <span class="i-material-symbols-shield-locked-rounded"></span>
+                  </div>
+                  <div
+                    class="absolute inset-y-0 end-0 flex items-center pr-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-brands-light-green bg-transparent p-2 text-xs font-semibold text-brands-light-green hover:bg-brands-light-green hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-400 disabled:bg-transparent disabled:text-gray-400"
+              type="button"
+            >
+              <span class="i-material-symbols-save-rounded text-icon-sm"></span>
+              <span class="capitalize">Simpan Perubahan</span>
+            </button>
+          </form>
+          <!-- / PIN Security -->
+
+          <!-- Withdraw -->
+          <form
+          action="#"
+          method="post"
+          class="flex flex-col gap-6 rounded-[20px] bg-white p-2.5 shadow-md"
+        >
+          <div class="px-4 text-xl font-semibold text-gray-900">
+            Penarikan Dana
+          </div>
+          <div class="flex flex-col gap-2">
+            <div>
+              <label
+                for="my-select-bank"
+                class="ps-4 text-sm font-medium capitalize text-gray-900 empty:hidden"
+                >Pilih Bank</label
+              >
+              <div class="relative">
+                <select
+                  type="text"
+                  id="my-select-bank"
+                  class="peer w-full appearance-none rounded-2xl border border-gray-400 bg-white p-3 px-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                  placeholder="Select Placeholder"
+                >
+                  <option selected>Pilih bank tujuan penarikan</option>
+                  <option value="bri">BRI</option>
+                  <option value="bca">BCA</option>
+                  <option value="bni">BNI</option>
+                </select>
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-account-balance-rounded"></span>
+                </div>
+                <div
+                  class="absolute inset-y-0 end-0 flex items-center pr-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-keyboard-arrow-down-rounded"></span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <label
+                for="my-input-name"
+                class="px-4 text-sm font-medium capitalize text-gray-900 empty:hidden"
+                >Nama di Rekening</label
+              >
+              <div class="relative">
+                <input
+                  type="text"
+                  id="my-input-name"
+                  class="peer w-full rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                  placeholder="Masukkan nama pemilik rekening"
+                />
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-person-rounded"></span>
+                </div>
+                <div
+                  class="absolute inset-y-0 end-0 flex items-center pr-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                ></div>
+              </div>
+            </div>
+            <div>
+              <label
+                for="my-input-num-rek"
+                class="px-4 text-sm font-medium capitalize text-gray-900 empty:hidden"
+                >Nomor Rekening</label
+              >
+              <div class="relative">
+                <input
+                  type="number"
+                  id="my-input-num-rek"
+                  class="peer w-full rounded-2xl border border-gray-400 bg-white p-3 pe-12 ps-12 text-sm text-gray-900 placeholder:text-gray-400 invalid:bg-red-200 invalid:text-red-900 invalid:caret-red-900 focus:outline-none focus:ring-2 focus:ring-green-400 focus:invalid:ring-red-900 disabled:border-gray-300 disabled:bg-gray-100"
+                  placeholder="Masukkan nomor rekening"
+                />
+                <div
+                  class="absolute inset-y-0 start-0 flex items-center ps-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                >
+                  <span class="i-material-symbols-credit-card"></span>
+                </div>
+                <div
+                  class="absolute inset-y-0 end-0 flex items-center pr-4 text-icon-md text-gray-400 peer-invalid:text-red-400 peer-invalid:peer-focus:text-red-900"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-brands-light-green bg-transparent p-2 text-xs font-semibold text-brands-light-green hover:bg-brands-light-green hover:text-white focus:outline-none focus:ring-2 focus:ring-green-400 disabled:cursor-not-allowed disabled:border-gray-400 disabled:bg-transparent disabled:text-gray-400"
+            type="button"
+          >
+            <span class="i-material-symbols-save-rounded text-icon-sm"></span>
+            <span class="capitalize">Simpan Perubahan</span>
+          </button>
+        </form>
+          <!-- / Withdraw -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="fixed bottom-0 left-0 right-0 flex bg-white">
+      <a
+        href="#"
+        class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+      >
+        <span
+          class="i-material-symbols-home-outline-rounded inline text-icon-md group-hover:hidden"
+        ></span>
+        <span
+          class="i-material-symbols-home-rounded hidden text-icon-md group-hover:inline"
+        ></span>
+        <span class="text-xs font-semibold">Home</span>
+      </a>
+      <a
+        href="#"
+        class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+      >
+        <span
+          class="i-material-symbols-receipt-outline-rounded inline text-icon-md group-hover:hidden"
+        ></span>
+        <span
+          class="i-material-symbols-receipt-rounded hidden text-icon-md group-hover:inline"
+        ></span>
+        <span class="text-xs font-semibold">History</span>
+      </a>
+      <a
+        href="#"
+        class="group flex w-full flex-col items-center p-3 text-gray-900 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+      >
+        <span
+          class="i-material-symbols-person-outline-rounded inline text-icon-md group-hover:hidden"
+        ></span>
+        <span
+          class="i-material-symbols-person-rounded hidden text-icon-md group-hover:inline"
+        ></span>
+        <span class="text-xs font-semibold">Account</span>
+      </a>
+    </div>
+    <!-- / Navbar -->
+  </body>
+</html>
